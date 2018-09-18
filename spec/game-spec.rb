@@ -1,11 +1,11 @@
-require 'game'
+require 'spec_helper'
 
 describe Game do 
-    let (:game) {Game.new}
-    let(:player) { instance_double(selection: "rock") }
+    subject(:game) {described_class.new}
 
     it 'asks if you would like to play' do
-        expect(subject.start_game).to eq "Would you like to play?"
+        Game.new = "Would you like to play?"
+        expect(subject.new).to eq "Would you like to play?"
     end
 
 end

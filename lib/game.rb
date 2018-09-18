@@ -1,8 +1,5 @@
- class Game
+class Game
 
-    def start_game
-        puts "Would you like to play?"
-        gets.chomp
-    end
+    options = ["Rock", "Paper", "Scissors"]
 
- end
+end

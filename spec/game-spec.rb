@@ -1,11 +1,9 @@
-require 'spec_helper'
+require './lib/game'
 
-describe Game do 
-    subject(:game) {described_class.new}
+describe 'rps' do
 
-    it 'asks if you would like to play' do
-        Game.new = "Would you like to play?"
-        expect(subject.new).to eq "Would you like to play?"
+    it 'shows options message' do
+        expect(rps).to eq "Please pick #{options}"
     end
 
 end

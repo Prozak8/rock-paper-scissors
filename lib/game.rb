@@ -1,5 +1,8 @@
-class Game
+def rps
+    puts = "Please pick #{options}"
+    
+end
 
-    options = ["Rock", "Paper", "Scissors"]
-
+def
+options = ["Rock, Paper, Scissors"]
 end

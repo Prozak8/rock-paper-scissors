@@ -1,9 +1,14 @@
-require './lib/game'
+require 'game'
 
-describe 'rps' do
+module Game
+    describe RockPaperScissors do
+        it "should pick paper as the winner over rock" do
+            choice_1 = Game::RockPaperScissors.new(:paper)
+            choice_2 = Game::RockPaperScissors.new(:rock)
+            winner = choice_1.play(choice_2)
+            result = winner.move
 
-    it 'shows options message' do
-        expect(rps).to eq "Please pick #{options}"
+            expect(result).to eq(:paper)
+        end
     end
-
 end

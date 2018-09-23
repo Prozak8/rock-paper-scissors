@@ -1,8 +1,11 @@
-def rps
-    puts = "Please pick #{options}"
-    
-end
+module Game
+    class RockPaperScissors
+        
+        def initialize(move)
+            @move = move
+        end
 
-def
-options = ["Rock, Paper, Scissors"]
+        def play
+        end
+    end
 end

@@ -1,4 +1,4 @@
-Describe RPS do
+describe RPS do
 
     it "paper beats rock" do
         rps = RPS.new(guess: "rock")

@@ -1,5 +1,0 @@
-OUTCOMES = { 
-    :rock
-    :paper
-    :scissors
-}

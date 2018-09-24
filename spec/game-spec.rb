@@ -1,14 +1,20 @@
-require 'game'
+Describe RPS do
 
-module Game
-    describe RockPaperScissors do
-        it "should pick paper as the winner over rock" do
-            choice_1 = Game::RockPaperScissors.new(:paper)
-            choice_2 = Game::RockPaperScissors.new(:rock)
-            winner = choice_1.play(choice_2)
-            result = winner.move
+    it "paper beats rock" do
+        rps = RPS.new(guess: "rock")
+        rps.rand_seed = 1
+        expect(rps.winner_is).to eq("Computer wins...")
+    end
 
-            expect(result).to eq(:paper)
-        end
+    it "paper loses to scissors" do
+        rps = RPS.new(guess: "scissors")
+        rps.rand_seed = 1
+        expect(rps.winner_is).to eq("You win!")
+    end
+
+    it "paper draws with paper" do
+        rps = RPS.new(guess: "paper")
+        rps.rand_seed = 1
+        expect(rps.winner_is).to eq("Draw.")
     end
 end

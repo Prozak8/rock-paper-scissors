@@ -1,3 +1,5 @@
+require './lib.rps'
+
 describe RPS do
 
     it "paper beats rock" do

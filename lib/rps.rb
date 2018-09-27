@@ -1,5 +1,3 @@
-
-
 class RPS
     attr_writer :rand_seed
 
@@ -19,7 +17,7 @@ class RPS
         elsif rule_engine[@guess.to_sym].include? computer_guess
             "You win!"
         else
-            "Draw"
+            "Draw."
         end
     end
 

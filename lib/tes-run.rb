@@ -21,4 +21,8 @@ elsif (comp == "rock" && human == "rock") ||
 else p "you lose"
     computerscore += 1
 end
+
+p "Your score: #{humanscore}"
+p "Computer Score: #{computerscore}"
+p humanscore > computerscore ? ("YOU WIN!") : ("COMPUTER WINS!")
 end

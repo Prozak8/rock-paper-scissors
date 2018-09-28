@@ -10,15 +10,14 @@ humanScore = 0
     human = gets.chomp.downcase
     comp = ["rock", "paper", "scissors"].sample
 
+    
     if      (human == "rock" && comp == "scissors") || 
             (human == "scissors" && comp == "paper") || 
             (human == "paper" && comp == "rock")
                 p "You won!"
                 humanScore += 1
 
-    elsif   (human == "rock" && comp == "rock") || 
-            (human == "paper" && comp == "paper") || 
-            (human == "scissors" && comp == "scissors")
+    elsif   (human == comp)
                 p "Draw! No point awarded"
 
     else    compScore += 1
